@@ -14,7 +14,10 @@ import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Chatbot from './components/Chatbot'
+import Verify from './pages/Verify'
 
+// export const backendUrl = import.meta.env.VITE_BACKEND_URL
 
 const App = () => {
   return (
@@ -32,8 +35,10 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/place-order' element={<PlaceOrder/>}/>
         <Route path='/orders' element={<Orders/>}/>
+        {/* <Route path='/verify' element={<Verify/>}/> */}
       </Routes>
       <Footer/>
+      <Chatbot/>
     </div>
   )
 }
